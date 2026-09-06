@@ -24,7 +24,6 @@ export const Navbar = ({ data, onOpenCVModal }) => {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Certifications', href: '#certifications' },
     { name: 'Next Steps', href: '#future-interests' },
     { name: 'Contact', href: '#contact' },
   ];

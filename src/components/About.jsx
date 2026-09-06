@@ -22,13 +22,13 @@ export const About = ({ data }) => {
         <div className="mb-14 text-center sm:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-900 text-blue-700 dark:text-blue-300 font-mono text-xs font-medium mb-3">
             <BookOpen className="w-3.5 h-3.5" />
-            <span>Academic Background & Philosophy</span>
+            <span>My Background</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
             About Me
           </h2>
           <p className="mt-2 text-base text-slate-600 dark:text-slate-400 max-w-2xl">
-            A solid computational foundation oriented toward practical problem solving and future graduate research.
+           A solid computational foundation oriented toward practical problem solving and future graduate research.
           </p>
         </div>
 

@@ -135,7 +135,7 @@ export const Hero = ({ data, onOpenCVModal }) => {
 
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
               <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Core Focus</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">Software & AI</div>
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">Software Development</div>
               <div className="text-xs text-slate-500 dark:text-slate-400">Algorithms & Systems</div>
             </div>
 
@@ -147,8 +147,8 @@ export const Hero = ({ data, onOpenCVModal }) => {
 
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
               <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Next Objective</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">European Master's</div>
-              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">AI & Software Systems</div>
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">International Master's</div>
+              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced Study & Specialization</div>
             </div>
           </div>
 

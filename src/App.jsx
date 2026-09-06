@@ -9,7 +9,6 @@ import { Education } from './components/Education';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
-import { Certifications } from './components/Certifications';
 import { FutureInterests } from './components/FutureInterests';
 import { CVSection } from './components/CVSection';
 import { CVModal } from './components/CVModal';
@@ -51,8 +50,7 @@ function App() {
           {/* Categorized Skills (No fake percentages) */}
           <Skills data={portfolioData} />
 
-          {/* Certifications & Training */}
-          <Certifications data={portfolioData} />
+          
 
           {/* Where I Want to Go Next (Master's Aspirations) */}
           <FutureInterests data={portfolioData} />

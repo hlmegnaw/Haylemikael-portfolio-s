@@ -139,7 +139,7 @@ export const Education = ({ data }) => {
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
-              Aligns with European Master's degree specializations in AI & Computing Systems.
+              Interested in exploring advanced areas of Computer Science and related fields through postgraduate study.
             </div>
           </div>
 

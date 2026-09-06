@@ -16,23 +16,21 @@ export const portfolioData = {
     headline: "Computer Science Graduate | Software & AI Enthusiast",
     rotatingTitles: [
       "Computer Science Graduate",
-      "Aspiring AI Engineer",
       "Software Developer",
-      "Machine Learning Enthusiast",
-      "Future Master's Student"
+      "IT & Networking"
     ],
-    summary: "Computer Science graduate with a strong academic foundation in algorithms, programming, databases, artificial intelligence, software engineering, computer networks, and operating systems. Interested in building practical software solutions and pursuing advanced study in Artificial Intelligence, Data Processing, and Software Systems.",
-    location: "Ethiopia (Open to European Master's Studies)",
+    summary: "Computer Science graduate with a strong foundation in software development, algorithms, databases, and computer systems. I have built practical web and Java applications and gained hands-on experience in networking and IT support through professional internships. My portfolio brings together my academic background, technical skills, professional experience, and projects.   ",
+    location: "Ethiopia • Open to International Opportunities",
     email: "haylemikaelgurba2003@gmail.com",
     github: "https://github.com/hlmegnaw",
     linkedin: "https://www.linkedin.com/in/haylemikael-gurba-goshe-312209434",
     cvPath: "/Haylemikael_Gurba_Goshe_CV.pdf", // Path to Europass CV PDF in public folder
     aboutNarrative: {
       paragraphs: [
-        "I hold a Bachelor of Science in Computer Science from Arba Minch University, where I built a rigorous foundation in computational theory, algorithms, software engineering principles, and database systems.",
-        "My enthusiasm lies at the convergence of practical software development and intelligent data-driven systems. Throughout my undergraduate journey and personal projects, I have continually bridged theoretical concepts with real-world implementation—progressing from core Java desktop engineering to full-stack web applications and relational data modeling.",
-        "During my internship at the Commercial Bank of Ethiopia, I contributed to mission-critical IT infrastructure, refining my hardware and software troubleshooting capabilities, technical support methodology, and professional communication within a secure enterprise setting.",
-        "I am currently preparing for Master's degree studies in Europe focused on Artificial Intelligence, Data Processing, and Software Systems. My goal is to expand my research and technical depth to engineer reliable, scalable, and intelligent software that addresses complex real-world challenges."
+        "I earned a Bachelor of Science in Computer Science from Arba Minch University, where I developed a strong foundation in computational concepts, algorithms, software engineering, database systems, and computer systems.",
+        "My academic background has been complemented by practical software development experience. I have worked with Java to build desktop applications and developed full-stack web applications, gaining experience in programming, relational data modeling, application design, and problem solving.",
+        "Beyond software development, I have gained hands-on experience in IT and networking through professional internships, including practical work in computer maintenance, hardware and software troubleshooting, technical support, networking, and IT operations within professional environments.",
+        "I am interested in continuing my academic and professional development through postgraduate study and expanding my knowledge across advanced areas of computing. I aim to build on my existing foundation, develop deeper technical expertise, and apply computer science to meaningful real-world problems."
       ],
       coreStrengths: [
         "Rigorous Computer Science Fundamentals",
@@ -47,16 +45,17 @@ export const portfolioData = {
     degree: "Bachelor of Science in Computer Science",
     institution: "Arba Minch University",
     location: "Arba Minch, Ethiopia",
-    graduationYear: "2024",
+    graduationYear: "2026",
     cgpa: "3.54 / 4.00",
     academicInterests: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Processing",
-      "Software Engineering",
-      "Database Systems",
-      "Algorithms & Complexity",
-      "Computer Systems & Networks",
+      "Artificial Intelligence& Machine Learning",
+      "Data Engineering & Analytics",
+      "Software Architecture & Systems",
+      "Advanced Software Engineering",
+      "Distributed & Networked Systems",
+      "Cloud Computing & Web Technologies",
+      "Advanced Algorithms & Computational Methods",
+      "Cybersecurity & Computer Systems",
       "Natural Language Processing"
     ],
     keyCourses: [
@@ -79,20 +78,20 @@ export const portfolioData = {
       location: "Ethiopia",
       period: "July – September 2025",
       type: "Academic Internship",
-      description: "Delivered hands-on technical support and IT systems maintenance within a demanding corporate banking environment, ensuring operational readiness of hardware, peripherals, and internal workstations.",
+      description: "Gained hands-on experience supporting day-to-day IT operations in a professional banking environment, working with computer hardware, software, peripherals, network connectivity, and user support.",
       responsibilities: [
-        "Diagnosed and resolved hardware malfunctions, component failures, and peripheral issues across desktop computers and workstations.",
-        "Performed software maintenance, operating system configuration, driver updates, and critical workstation diagnostics.",
-        "Conducted printer maintenance, hardware repair, network printer configuration, and troubleshooting for branch operations.",
-        "Provided direct technical support to branch staff, assisting with application workflows and resolving day-to-day software and hardware bottlenecks.",
-        "Assisted with local network connectivity checks, structured cabling inspection, and basic IT network troubleshooting.",
-        "Adhered strictly to enterprise compliance, security protocols, and operational standards within a high-security banking infrastructure."
+        "Diagnosed and resolved hardware malfunctions, component issues, and peripheral problems on desktop computers and workstations.",
+        "Performed software maintenance, operating system configuration, driver updates, and workstation troubleshooting.",
+        "Conducted printer maintenance, hardware repairs, network printer configuration, and troubleshooting.",
+        "Provided technical support to staff, helping resolve day-to-day hardware, software, and application-related issues.",
+        "Assisted with local network connectivity checks, structured cabling inspection, and basic network troubleshooting.",
+        "Followed organizational procedures and security requirements while performing IT support and maintenance tasks."
       ],
       technologies: [
         "Hardware Diagnostics",
         "Windows OS & Systems Configuration",
         "Printer Maintenance & Networking",
-        "Troubleshooting Tools",
+        "Software Troubleshooting",
         "User Technical Support",
         "Banking IT Environment"
       ]
@@ -262,51 +261,31 @@ export const portfolioData = {
     ]
   },
 
-  certifications: [
-    {
-      id: "cert-1",
-      title: "Full-Stack Software Development Foundations",
-      organization: "Academic / Professional Training",
-      date: "2024",
-      credentialId: "[Add Credential ID if applicable]",
-      credentialUrl: null,
-      description: "Structured curriculum covering full-stack web architecture, API integration, and database management."
-    },
-    {
-      id: "cert-2",
-      title: "Object-Oriented Programming in Java",
-      organization: "Arba Minch University / Computer Science Department",
-      date: "2023",
-      credentialId: "[Add Credential ID if applicable]",
-      credentialUrl: null,
-      description: "Comprehensive coursework and laboratory evaluation in advanced OOP paradigms, data structures, and algorithmic implementation."
-    }
-  ],
-
+  
   futureInterests: {
     sectionTitle: "Where I Want to Go Next",
     subtitle: "Academic Ambitions & Master's Degree Focus",
-    statement: "I have built a strong Computer Science foundation and aim to deepen it through Master's-level study and practical research in Europe. I am passionate about tackling foundational computational problems and engineering scalable, intelligent systems.",
+    statement: "I have built a strong foundation in Computer Science and aim to deepen it through Master's-level study and applied research in Europe. My goal is to strengthen my theoretical understanding while developing scalable, intelligent, and dependable computing systems that address real-world challenges.",
     areas: [
       {
         title: "Artificial Intelligence & Machine Learning",
-        description: "Deepening theoretical and practical foundations in neural models, predictive systems, and intelligent agent architectures.",
-        relevance: "Advancing from foundational CS algorithms to modern probabilistic and statistical learning models."
+        description: "Deepening my theoretical and practical understanding of machine learning, neural models, predictive systems, and intelligent agents.",
+        relevance: "Advancing from foundational algorithms and programming toward modern statistical and learning-based computational methods."
       },
       {
         title: "Data Processing & High-Throughput Systems",
-        description: "Exploring scalable data pipelines, distributed storage, and efficient real-time data transformation techniques.",
-        relevance: "Addressing complex data challenges encountered in modern scientific, industrial, and financial environments."
+        description: "Exploring scalable data pipelines, distributed storage, and efficient real-time data processing for large and complex datasets.",
+        relevance: "Developing the skills needed to address data-intensive challenges in scientific, industrial, and financial environments."
       },
       {
         title: "Software Systems & Architecture",
-        description: "Mastering advanced software design patterns, concurrent systems, cloud virtualization, and dependable distributed systems.",
-        relevance: "Constructing high-assurance, fault-tolerant platforms for mission-critical applications."
+        description: "Advancing my expertise in software architecture, concurrent systems, cloud computing, virtualization, and dependable distributed systems.",
+        relevance: "Designing scalable, fault-tolerant software platforms for demanding and mission-critical applications."
       },
       {
         title: "Natural Language Processing",
-        description: "Investigating computational linguistics, text representation, transformer architectures, and information retrieval.",
-        relevance: "Building bridges between human language data and structured computing systems."
+        description: "Exploring computational linguistics, text representation, transformer architectures, and information retrieval.",
+        relevance: "Connecting human language with intelligent computing systems through modern language-processing and information-retrieval techniques."
       }
     ]
   },
@@ -320,7 +299,7 @@ export const portfolioData = {
       "BSc in Computer Science (CGPA: 3.54 / 4.00)",
       "Technical Internship at Commercial Bank of Ethiopia (CBE)",
       "Object-Oriented & Full-Stack Projects with Public Repositories",
-      "Ready for European Master's Degree Admissions Evaluation"
+      "Ready for International Master's-level study "
     ]
   },
 
@@ -328,14 +307,14 @@ export const portfolioData = {
     heading: "Get in Touch",
     subheading: "Academic inquiries, Master's program coordinators, and technical reviewers are welcome to reach out.",
     email: "haylemikaelgurba2003@gmail.com",
-    location: "Arba Minch / Addis Ababa, Ethiopia",
+    location: "Gondar , Ethiopia",
     socials: [
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/haylemikael-gurba-goshe-312209434",
         handle: "Haylemikael Gurba Goshe"
       },
-      {
+      { 
         name: "GitHub",
         url: "https://github.com/hlmegnaw",
         handle: "hlmegnaw"
