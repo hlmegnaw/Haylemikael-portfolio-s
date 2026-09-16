@@ -66,7 +66,7 @@ export const CVSection = ({ data }) => {
 
                 {/* View Real Europass CV */}
                 <a
-                  href="https://europa.eu/europass/eportfolio/screen/share/54f136ea-88fa-45e9-b086-c0c8bb67d225?lang=en"
+                  href="https://europa.eu/europass/eportfolio/screen/share/df5187da-6f07-4215-b1b8-50f30676278c?lang=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-slate-200 bg-white/60 dark:bg-slate-800/60 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all shadow-sm"

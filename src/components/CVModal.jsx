@@ -42,7 +42,7 @@ export const CVModal = ({ data, onClose }) => {
 
             {/* Open Europass */}
             <a
-              href="https://europa.eu/europass/eportfolio/screen/share/54f136ea-88fa-45e9-b086-c0c8bb67d225?lang=en"
+              href="https://europa.eu/europass/eportfolio/screen/share/df5187da-6f07-4215-b1b8-50f30676278c?lang=en"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
