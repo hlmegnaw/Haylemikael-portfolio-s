@@ -99,111 +99,199 @@ export const portfolioData = {
   ],
 
   projects: [
-    {
-      id: 1,
-      number: "01",
-      total: "03",
-      title: "Student Management System",
-      category: "Software Engineering",
-      subCategory: "Java Application",
-      technologies: ["Java", "OOP", "Application Logic", "Data Validation", "File I/O"],
-      shortDescription: "A Java-based desktop application developed to systematically manage student records, demonstrate core Object-Oriented Programming principles, and ensure robust institutional data organization.",
-      status: "Completed",
-      isLive: false,
-      deployedWithNetlify: false,
-      github: "[Add GitHub URL]",
-      liveDemo: null,
-      linkedin: "[Add LinkedIn Post URL]",
-      overview: "A desktop software application engineered in Java designed to systematically organize, track, and manage student academic records, course enrollments, and institutional information through a structured and maintainable architecture.",
-      problem: "Academic departments and educational coordinators frequently encounter administrative bottlenecks when tracking student records through paper logs or unstructured spreadsheets. Common problems include duplicate data entry, indexing difficulties, and lack of systematic data validation.",
-      solution: "Engineered a modular Java application adhering strictly to Object-Oriented principles. Implemented custom domain classes for Students, Courses, and Academic Records, complete with input validation and persistent storage mechanisms.",
-      technicalFocus: [
-        "Java Core Programming & Syntax",
-        "Object-Oriented Design (Encapsulation, Inheritance, Polymorphism)",
-        "Application Logic & State Management",
-        "Data Validation & Error Handling",
-        "Clean Software Architecture"
-      ],
-      keyFeatures: [
-        "Student record creation, search, updates, and deletion (CRUD operations)",
-        "Course enrollment tracking and academic record association",
-        "Structured validation logic preventing duplicate identifiers and invalid input formats",
-        "Modular class hierarchy separating user interface logic from core business logic"
-      ],
-      technicalChallenges: "Structuring the class hierarchy to maximize code reuse while maintaining strong encapsulation across domain entities. Ensuring that all user inputs are defensively validated before mutations are applied to stored data.",
-      whatILearned: "Deepened practical mastery of Object-Oriented Programming principles, modular application design, error handling patterns, and defensive programming in Java."
-    },
-    {
-      id: 2,
-      number: "02",
-      total: "03",
-      title: "Full-Stack Web Application",
-      category: "Full-Stack",
-      subCategory: "Web Development / Full-Stack",
-      technologies: ["React", "JavaScript", "Node.js", "Express", "Database / SQL", "REST API", "Tailwind CSS"],
-      shortDescription: "A full-stack web application developed to demonstrate practical experience in frontend architecture, server-side API integration, database interaction, and automated deployment pipelines.",
-      status: "Preparing for deployment", // Set to "Live" once deployment URL is live
-      isLive: false,
-      deployedWithNetlify: true, // Will show "DEPLOYED WITH NETLIFY" badge when liveDemo URL is set
-      github: "[Add GitHub URL]",
-      liveDemo: "[Add Netlify URL]",
-      linkedin: "[Add LinkedIn Post URL]",
-      overview: "A complete multi-tier web application developed across frontend and backend layers, incorporating modern component-driven UI architecture, RESTful API endpoints, and structured database querying.",
-      problem: "Modern web services demand responsive, accessible user interfaces backed by performant server endpoints capable of processing asynchronous requests reliably and maintaining clean state synchronization.",
-      solution: "Constructed a decoupled client-server architecture with an interactive frontend communicating via structured REST endpoints with a dedicated backend service, designed for predictable continuous deployment on Netlify.",
-      technicalFocus: [
-        "Frontend Component Architecture",
-        "Backend RESTful API Design",
-        "Database Integration & Query Processing",
-        "Responsive & Accessible UI Design",
-        "Asynchronous Request Handling & State Management",
-        "Deployment Pipeline Configuration (Netlify)"
-      ],
-      keyFeatures: [
-        "Modular, component-based frontend with responsive design across mobile and desktop",
-        "RESTful API endpoints handling structured client requests with JSON payloads",
-        "Database interaction supporting reliable data querying and persistence",
-        "Optimized production build configuration tailored for automated hosting platforms"
-      ],
-      technicalChallenges: "Coordinating asynchronous state transitions between the client interface and server endpoints, handling network latency scenarios gracefully, and configuring cross-origin resource sharing (CORS).",
-      whatILearned: "Acquired hands-on experience in architecting multi-tier web systems, designing predictable API contracts, managing client state, and orchestrating deployment workflows."
-    },
-    {
-      id: 3,
-      number: "03",
-      total: "03",
-      title: "Online Auction Platform",
-      category: "Full-Stack",
-      subCategory: "Full-Stack Web Development",
-      technologies: ["React", "JavaScript", "Node.js", "Express", "Database Systems", "REST API", "Tailwind CSS"],
-      shortDescription: "A full-stack online auction platform designed to provide a digital environment for listing items, tracking auction lifecycle states, and facilitating structured auction data workflows.",
-      status: "Preparing for publication", // Set to "Live" once live URL is active
-      isLive: false,
-      deployedWithNetlify: false,
-      github: "[Add GitHub URL]",
-      liveDemo: "[Add hosting URL]",
-      linkedin: "[Add LinkedIn Post URL]",
-      overview: "A full-stack digital platform built around the domain of online auctions, facilitating structured cataloging of items, auction lifecycle status management, and organized participant workflows.",
-      problem: "Auction platforms require unambiguous state management, clear item cataloging, time-bounded listing lifecycles, and structured participant feedback to maintain credibility and operational clarity.",
-      solution: "Designed and engineered an auction workflow platform featuring modular item catalogs, transparent auction lifecycle indicators (Active, Completed, Pending), and reliable database persistence.",
-      technicalFocus: [
-        "Full-Stack Web Architecture",
-        "Frontend Interface Development & Ergonomics",
-        "Backend Application Logic & Routing",
-        "Database Interaction & Relational Modeling",
-        "Auction Lifecycle State Management",
-        "Production Readiness & Web Hosting"
-      ],
-      keyFeatures: [
-        "Item listing creation with detailed item descriptions and categorization",
-        "Auction status tracking and lifecycle management",
-        "Structured database persistence for listings and associated metadata",
-        "Clean, responsive interface built for accessible cross-device interaction"
-      ],
-      technicalChallenges: "Modeling auction state progression reliably while keeping frontend views synchronized with backend records. Designing a clean relational schema to support item attributes and status transitions without redundant data.",
-      whatILearned: "Strengthened practical expertise in domain-driven modeling, relational data architecture, time-sensitive application state, and comprehensive full-stack engineering."
-    }
-  ],
+  {
+    id: 1,
+    number: "01",
+    total: "03",
+
+    title: "Election Control & Management System",
+    category: "Full-Stack",
+    subCategory: "React / Node.js / MongoDB",
+
+    technologies: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Redux Toolkit"
+    ],
+
+    shortDescription:
+      "A full-stack web-based platform developed to support institutional election management, including user roles, voter and candidate management, election administration, voting, and result handling.",
+
+    status: "Completed",
+    isLive: true,
+    deployedWithNetlify: false,
+
+    github: "https://github.com/hlmegnaw/ECMS-FullStack",
+    liveDemo: "https://ecms-delta.vercel.app/",
+    linkedin: "[Add LinkedIn Post URL]",
+
+    overview:
+      "A centralized web-based election management system that brings voter management, candidate management, election administration, voting, and result handling into a single platform.",
+
+    problem:
+      "Institutional elections can involve multiple administrative tasks, user roles, voter eligibility, candidate information, voting workflows, and result management. Managing these processes separately can make coordination and data handling more difficult.",
+
+    solution:
+      "Developed a full-stack election management platform with a React frontend and Node.js/Express backend, supported by MongoDB for data persistence and JWT-based authentication for controlled access to system features.",
+
+    technicalFocus: [
+      "Role-Based Access Control",
+      "JWT Authentication",
+      "RESTful API Integration",
+      "Database Design & Data Management",
+      "Frontend State Management",
+      "Voting Workflow Implementation"
+    ],
+
+    keyFeatures: [
+      "Role-based access for SuperAdmin, ElectionAdmin, Candidate, and Voter",
+      "User authentication and protected system access",
+      "Voter and candidate management",
+      "Election creation and administration",
+      "Voting and eligibility workflows",
+      "Election result handling",
+      "Frontend–backend API communication"
+    ],
+
+    technicalChallenges:
+      "Designing coordinated workflows across different user roles, maintaining secure authentication and authorization, modeling relationships between elections, voters, candidates, votes, and results, and integrating the frontend with backend APIs.",
+
+    whatILearned:
+      "Gained practical experience in full-stack application development, authentication and authorization, database modeling, REST API integration, frontend state management, and deploying a production web application."
+  },
+
+  {
+    id: 2,
+    number: "02",
+    total: "03",
+
+    title: "Vital Event Registration System",
+    category: "Full-Stack",
+    subCategory: "PHP / MySQL Web Development",
+
+    technologies: [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "XAMPP",
+      "Database Systems"
+    ],
+
+    shortDescription:
+      "A group academic web application for registering and managing vital events, including births, deaths, marriages, divorces, and adoptions through a structured database-driven system.",
+
+    status: "Deployed",
+    isLive: true,
+    deployedWithNetlify: false,
+
+    github: "https://github.com/hlmegnaw/Vital-Event-Registration",
+    liveDemo: "http://vers-eth.rf.gd/",
+    linkedin: "[Add LinkedIn Post URL]",
+
+    overview:
+      "A database-driven web application developed as a group academic project to support the registration, management, and retrieval of vital event records through a centralized digital system.",
+
+    problem:
+      "Vital event records require organized data management, reliable registration workflows, secure access, and efficient retrieval of information. Manual or fragmented record-keeping can make these processes difficult to manage consistently.",
+
+    solution:
+      "Developed a web-based registration and management system that organizes vital event records within a centralized database and provides role-based access for different administrative levels.",
+
+    technicalFocus: [
+      "Full-Stack Web Development",
+      "PHP Backend Development",
+      "MySQL Database Management",
+      "Database-Driven Application Design",
+      "Role-Based Authentication",
+      "CRUD Operations",
+      "Web Application Deployment"
+    ],
+
+    keyFeatures: [
+      "Registration and management of birth, death, marriage, divorce, and adoption records",
+      "Role-based access for different administrative users",
+      "Centralized MySQL database for structured record storage",
+      "Administrative dashboards and record management workflows",
+      "Search, retrieval, and reporting of registered records",
+      "Responsive web interface for system interaction"
+    ],
+
+    technicalChallenges:
+      "Designing a structured relational database for multiple types of vital events while maintaining relationships between administrative users and geographic entities. Implementing role-based workflows and adapting the application for deployment from a local XAMPP environment to a public web server.",
+
+    whatILearned:
+      "Strengthened practical experience in PHP web development, relational database design, authentication, CRUD-based application workflows, team-based software development, and deploying a database-driven application to a live hosting environment."
+  },
+
+  {
+    id: 3,
+    number: "03",
+    total: "03",
+
+    title: "Interactive AMU Campus Visualization",
+    category: "Computer Graphics",
+    subCategory: "C++ / OpenGL / FreeGLUT",
+
+    technologies: [
+      "C++",
+      "OpenGL",
+      "FreeGLUT",
+      "GLU",
+      "3D Computer Graphics",
+      "Geometric Modeling"
+    ],
+
+    shortDescription:
+      "An interactive computer graphics application developed in C++ using OpenGL and FreeGLUT to construct and navigate a visual representation of the Arba Minch University campus environment.",
+
+    status: "Completed",
+    isLive: false,
+    deployedWithNetlify: false,
+
+    github: "https://github.com/hlmegnaw/Amu_Demo",
+    liveDemo: null,
+    linkedin: "[Add LinkedIn Post URL]",
+
+    overview:
+      "An interactive computer graphics project that uses C++ with OpenGL, GLU, and FreeGLUT to construct a visual campus environment containing buildings, roads, trees, and people. The application demonstrates geometric scene construction, graphical transformations, rendering, and interactive movement through the environment.",
+
+    problem:
+      "Computer graphics projects require more than displaying individual geometric objects. A convincing interactive scene must organize multiple graphical elements, position them consistently within a shared environment, and provide a way for the user to navigate and observe the rendered scene.",
+
+    solution:
+      "Developed a modular OpenGL-based campus visualization in C++, separating major scene components such as roads, buildings, trees, and people into dedicated source files. The application combines geometric modeling, transformations, rendering techniques, and interactive movement to create a navigable university environment.",
+
+    technicalFocus: [
+      "C++ Programming for Computer Graphics",
+      "OpenGL Rendering & Graphics Pipeline Concepts",
+      "Geometric Modeling & Scene Construction",
+      "Coordinate Systems & Object Transformations",
+      "Interactive Camera / Scene Navigation",
+      "Modular Graphics Programming"
+    ],
+
+    keyFeatures: [
+      "Interactive visual representation of an Arba Minch University campus environment",
+      "Procedurally constructed buildings, roads, trees, and people using graphical primitives",
+      "Modular scene components organized across separate C++ source files",
+      "OpenGL-based rendering with GLU and FreeGLUT",
+      "Interactive movement through the rendered environment",
+      "Real-time visualization of the constructed campus scene"
+    ],
+
+    technicalChallenges:
+      "Organizing many graphical objects within a shared coordinate system while maintaining consistent positioning and visual relationships between scene components. Another challenge was structuring the graphics code into manageable modules while implementing interactive movement and rendering the complete environment in real time.",
+
+    whatILearned:
+      "Strengthened my understanding of computer graphics fundamentals, OpenGL programming, geometric modeling, coordinate transformations, scene organization, and interactive rendering. The project also improved my ability to structure a graphics application into reusable and manageable components."
+  }
+],
 
   skills: {
     categories: [
@@ -265,7 +353,7 @@ export const portfolioData = {
   futureInterests: {
     sectionTitle: "Where I Want to Go Next",
     subtitle: "Academic Ambitions & Master's Degree Focus",
-    statement: "I have built a strong foundation in Computer Science and aim to deepen it through Master's-level study and applied research in Europe. My goal is to strengthen my theoretical understanding while developing scalable, intelligent, and dependable computing systems that address real-world challenges.",
+    statement: "I have built a strong foundation in Computer Science and aim to deepen it through Master's-level study and applied research in international . My goal is to strengthen my theoretical understanding while developing scalable, intelligent, and dependable computing systems that address real-world challenges.",
     areas: [
       {
         title: "Artificial Intelligence & Machine Learning",

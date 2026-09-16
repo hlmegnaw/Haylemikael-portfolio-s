@@ -23,7 +23,7 @@ export const Experience = ({ data }) => {
         <div className="mb-14 text-center sm:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-900 text-blue-700 dark:text-blue-300 font-mono text-xs font-medium mb-3">
             <Briefcase className="w-3.5 h-3.5" />
-            <span>Practical IT & Industry Experience</span>
+            <span>Practical IT & Banking Experience</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
             Internship & Work Experience

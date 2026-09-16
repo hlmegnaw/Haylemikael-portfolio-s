@@ -133,7 +133,7 @@ export const Skills = ({ data }) => {
               </div>
 
               <div className="mt-5 pt-3 border-t border-slate-200/60 dark:border-slate-800 text-[11px] text-slate-400 dark:text-slate-500 font-mono">
-                {cat.skills.length} verified competencies
+                {cat.skills.length}  competencies
               </div>
             </div>
           ))}

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  ArrowRight, 
-  FileDown, 
-  Github, 
-  Linkedin, 
-  Mail, 
-  GraduationCap, 
-  Code2, 
-  BrainCircuit, 
+import {
+  ArrowRight,
+  FileDown,
+  Github,
+  MessageCircle,
+  Mail,
+  GraduationCap,
+  Code2,
+  BrainCircuit,
   Sparkles,
   ExternalLink
 } from 'lucide-react';
@@ -21,8 +21,12 @@ export const Hero = ({ data, onOpenCVModal }) => {
     const interval = setInterval(() => {
       // Fade out
       setFadeState('opacity-0 -translate-y-2');
+
       setTimeout(() => {
-        setCurrentTitleIndex((prev) => (prev + 1) % personal.rotatingTitles.length);
+        setCurrentTitleIndex(
+          (prev) => (prev + 1) % personal.rotatingTitles.length
+        );
+
         // Fade in
         setFadeState('opacity-100 translate-y-0');
       }, 300);
@@ -32,19 +36,35 @@ export const Hero = ({ data, onOpenCVModal }) => {
   }, [personal.rotatingTitles.length]);
 
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section
+      id="home"
+      className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
+    >
       {/* Discreet background ambient gradient */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-500/10 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
-          
+
           {/* Academic Profile Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-medium mb-6 shadow-sm">
-            <GraduationCap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span>BSc Computer Science</span>
-            <span className="text-slate-400 dark:text-slate-500">•</span>
-            <span className="text-blue-600 dark:text-blue-400 font-semibold">Arba Minch University</span>
+<div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-medium mb-6 shadow-sm">
+  <GraduationCap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+
+  <span>BSc Computer Science</span>
+
+  <span className="text-slate-400 dark:text-slate-500">
+    •
+  </span>
+
+  <a
+    href="https://www.amu.edu.et/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 dark:text-blue-400 font-semibold hover:underline transition-colors"
+    title="Arba Minch University"
+  >
+    Arba Minch University
+  </a>
           </div>
 
           {/* Full Name */}
@@ -54,7 +74,7 @@ export const Hero = ({ data, onOpenCVModal }) => {
 
           {/* Dynamic Rotating Headline */}
           <div className="h-10 sm:h-12 flex items-center justify-center mb-6">
-            <p 
+            <p
               className={`text-lg sm:text-2xl font-semibold text-blue-600 dark:text-blue-400 font-mono transition-all duration-300 transform ${fadeState}`}
             >
               &gt; {personal.rotatingTitles[currentTitleIndex]}
@@ -68,6 +88,8 @@ export const Hero = ({ data, onOpenCVModal }) => {
 
           {/* Call-to-Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+
+            {/* View Projects */}
             <a
               href="#projects"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-sm hover:shadow transition-all"
@@ -76,6 +98,7 @@ export const Hero = ({ data, onOpenCVModal }) => {
               <ArrowRight className="w-4 h-4" />
             </a>
 
+            {/* Download CV */}
             <button
               onClick={onOpenCVModal}
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-slate-200 bg-white/60 dark:bg-slate-800/60 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all shadow-sm"
@@ -85,71 +108,131 @@ export const Hero = ({ data, onOpenCVModal }) => {
             </button>
           </div>
 
-          {/* Verified Links: GitHub, LinkedIn, Email */}
+          {/* Profiles & Contact */}
           <div className="flex items-center gap-6 text-slate-500 dark:text-slate-400 text-sm">
             <span className="text-xs uppercase tracking-wider font-mono text-slate-400 dark:text-slate-500 font-semibold">
               Profiles & Contact
             </span>
-            
+
             <div className="flex items-center gap-4">
+
+              {/* GitHub */}
               <a
-                href={personal.github !== '[Add GitHub URL]' ? personal.github : '#contact'}
-                target={personal.github !== '[Add GitHub URL]' ? '_blank' : '_self'}
-                rel="noreferrer"
+                href={
+                  personal.github &&
+                  !personal.github.includes('[Add')
+                    ? personal.github
+                    : '#contact'
+                }
+                target={
+                  personal.github &&
+                  !personal.github.includes('[Add')
+                    ? '_blank'
+                    : '_self'
+                }
+                rel="noopener noreferrer"
                 className="p-2 rounded-lg hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                title={personal.github !== '[Add GitHub URL]' ? 'GitHub Profile' : 'GitHub (Configurable)'}
+                title={
+                  personal.github &&
+                  !personal.github.includes('[Add')
+                    ? 'GitHub Profile'
+                    : 'GitHub'
+                }
               >
                 <Github className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
               </a>
 
+              {/* WhatsApp */}
               <a
-                href={personal.linkedin !== '[Add LinkedIn URL]' ? personal.linkedin : '#contact'}
-                target={personal.linkedin !== '[Add LinkedIn URL]' ? '_blank' : '_self'}
-                rel="noreferrer"
-                className="p-2 rounded-lg hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                title={personal.linkedin !== '[Add LinkedIn URL]' ? 'LinkedIn Profile' : 'LinkedIn (Configurable)'}
+                href="https://wa.me/251974543871"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                title="Chat on WhatsApp"
               >
-                <Linkedin className="w-5 h-5" />
-                <span className="sr-only">LinkedIn</span>
+                <MessageCircle className="w-5 h-5" />
+                <span className="sr-only">WhatsApp</span>
               </a>
 
+              {/* Gmail */}
               <a
-                href={`mailto:${personal.email}`}
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=haylemikaelgurba2003@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-lg hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                 title="Email Me"
               >
                 <Mail className="w-5 h-5" />
                 <span className="sr-only">Email</span>
               </a>
+
             </div>
           </div>
 
           {/* Quick Academic Focus Highlights */}
           <div className="mt-14 pt-8 border-t border-slate-200/80 dark:border-slate-800/80 w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+
+            {/* Academic Degree */}
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
-              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Academic Degree</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">BSc Computer Science</div>
-              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">CGPA: 3.54 / 4.00</div>
+              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">
+                Academic Degree
+              </div>
+
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                BSc Computer Science
+              </div>
+
+              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                CGPA: 3.54 / 4.00
+              </div>
             </div>
 
+            {/* Core Focus */}
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
-              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Core Focus</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">Software Development</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">Algorithms & Systems</div>
+              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">
+                Core Focus
+              </div>
+
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                Software Development
+              </div>
+
+              <div className="text-xs text-slate-500 dark:text-slate-400">
+                Algorithms & Systems
+              </div>
             </div>
 
+            {/* Technical Practice */}
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
-              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Technical Practice</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">Practical Projects</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">Java & Full-Stack Web</div>
+              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">
+                Technical Practice
+              </div>
+
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                Practical Projects
+              </div>
+
+              <div className="text-xs text-slate-500 dark:text-slate-400">
+                Java & Full-Stack Web
+              </div>
             </div>
 
+            {/* Next Objective */}
             <div className="p-3.5 rounded-lg bg-white/60 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800">
-              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">Next Objective</div>
-              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">International Master's</div>
-              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced Study & Specialization</div>
+              <div className="text-xs font-mono text-slate-400 dark:text-slate-500 mb-1">
+                Next Objective
+              </div>
+
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                International Master's
+              </div>
+
+              <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                Advanced Study & Specialization
+              </div>
             </div>
+
           </div>
 
         </div>
