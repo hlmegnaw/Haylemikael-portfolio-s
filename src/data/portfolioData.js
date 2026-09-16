@@ -28,7 +28,7 @@ export const portfolioData = {
     aboutNarrative: {
       paragraphs: [
         "I earned a Bachelor of Science in Computer Science from Arba Minch University, where I developed a strong foundation in computational concepts, algorithms, software engineering, database systems, and computer systems.",
-        "My academic background has been complemented by practical software development experience. I have worked with Java to build desktop applications and developed full-stack web applications, gaining experience in programming, relational data modeling, application design, and problem solving.",
+        "My academic foundation has been complemented by practical software development experience through university and personal projects. I have developed full-stack web applications involving frontend interfaces, backend services, databases, authentication, and application design, while strengthening my programming and problem-solving skills.",
         "Beyond software development, I have gained hands-on experience in IT and networking through professional internships, including practical work in computer maintenance, hardware and software troubleshooting, technical support, networking, and IT operations within professional environments.",
         "I am interested in continuing my academic and professional development through postgraduate study and expanding my knowledge across advanced areas of computing. I aim to build on my existing foundation, develop deeper technical expertise, and apply computer science to meaningful real-world problems."
       ],
@@ -102,6 +102,7 @@ export const portfolioData = {
   {
     id: 1,
     number: "01",
+    slug: "ecms",
     total: "03",
 
     title: "Election Control & Management System",
@@ -167,6 +168,7 @@ export const portfolioData = {
   {
     id: 2,
     number: "02",
+    slug: "vital-event",
     total: "03",
 
     title: "Vital Event Registration System",
@@ -232,6 +234,7 @@ export const portfolioData = {
   {
     id: 3,
     number: "03",
+    slug: "amu-campus",
     total: "03",
 
     title: "Interactive AMU Campus Visualization",

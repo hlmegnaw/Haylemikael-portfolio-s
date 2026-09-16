@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FolderGit2,
   ExternalLink,
@@ -14,6 +14,30 @@ export const Projects = ({ data }) => {
   const { projects } = data;
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
+    // Open a specific project automatically when accessed through
+  // a project-specific URL, e.g. ?project=amu-campus
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const projectSlug = params.get('project');
+
+    if (!projectSlug) return;
+
+    const projectFromUrl = projects.find(
+      (project) => project.slug === projectSlug
+    );
+
+    if (projectFromUrl) {
+      setSelectedProject(projectFromUrl);
+
+      // Bring the Projects section into view
+      setTimeout(() => {
+        document.getElementById('projects')?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
+    }
+  }, [projects]);
 
   const filterOptions = [
     'All',
@@ -306,7 +330,13 @@ export const Projects = ({ data }) => {
                 <div className="p-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
 
                   <button
-                    onClick={() => setSelectedProject(project)}
+onClick={() => {
+  setSelectedProject(project);
+
+  const url = new URL(window.location.href);
+  url.searchParams.set('project', project.slug);
+  window.history.pushState({}, '', url);
+}}
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-md bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
                   >
                     <span>View Details</span>
@@ -363,8 +393,13 @@ export const Projects = ({ data }) => {
       {selectedProject && (
         <ProjectModal
           project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
+onClose={() => {
+  setSelectedProject(null);
+
+  const url = new URL(window.location.href);
+  url.searchParams.delete('project');
+  window.history.pushState({}, '', url);
+}}        />
       )}
 
     </section>
